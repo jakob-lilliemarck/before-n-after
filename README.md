@@ -1,4 +1,3 @@
-#before-n-after
 A generic apollo-link-like composing function to create functional pipelines
 featuring both middlewares (called before) and afterwares (called after) the
 decorated function
