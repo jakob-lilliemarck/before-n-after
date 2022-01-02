@@ -1,12 +1,16 @@
 {
   "name": "before-n-after",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "keywords": [
     "middleware",
     "afterware",
     "pipeline",
     "composition"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jakob-lilliemarck/before-n-after.git"
+  },
   "scripts": {
     "test": "jest"
   },
