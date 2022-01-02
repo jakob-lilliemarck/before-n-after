@@ -1,0 +1,16 @@
+{
+  "name": "before-n-after",
+  "version": "1.0.1",
+  "keywords": [
+    "middleware",
+    "afterware",
+    "pipeline",
+    "composition"
+  ],
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^27.4.5"
+  }
+}
