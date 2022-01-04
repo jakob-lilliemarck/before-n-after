@@ -10,7 +10,7 @@
     "middleware",
     "afterware",
     "pipeline",
-    "tiny",
+    "tiny"
   ],
   "repository": {
     "type": "git",
