@@ -1,15 +1,23 @@
 {
   "name": "before-n-after",
-  "version": "1.0.3",
+  "description": "A composing function for creating functional pipelines with both middle- and after-wares",
+  "version": "1.0.4",
+  "license": "Apache-2.0",
+  "author": "Jakob Lilliemarck",
   "keywords": [
+    "functional",
+    "composition",
     "middleware",
     "afterware",
     "pipeline",
-    "composition"
+    "tiny",
   ],
   "repository": {
     "type": "git",
     "url": "https://github.com/jakob-lilliemarck/before-n-after.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jakob-lilliemarck/before-n-after/issues"
   },
   "scripts": {
     "test": "jest"

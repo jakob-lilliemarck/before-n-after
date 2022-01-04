@@ -1,8 +1,7 @@
-A generic apollo-link-like composing function to create functional pipelines
-featuring both middlewares (called before) and afterwares (called after) the
-decorated function
+A generic apollo-link-like composing function to create functional pipelines featuring both middlewares (called before) and afterwares (called after) the decorated function.
 
-The middleware function may optionally return a afterware function, which may access and alter return values.
+The middleware function may optionally return an afterware function, which may access and alter return values of the preceeding afterware.
+
 ```js
 // With afterware:
 const foo = (next) => (...args) => {
@@ -19,7 +18,7 @@ const foo = (next) => (...args) => {
 // Without afterware
 const bar = (next) => (...args) => {
   next(...args)
-  // nothing is returned. Non-function returns will throw an error.
+  // Nothing is returned. Non-function returns will throw an error.
 }
 ```
 
@@ -34,8 +33,13 @@ const baz = (next) => (value) => {
 }
 ```
 
-*`usePipeline()`* returns two functions composed from right to left. The first function is the function to decorate, the rest of the arguments are the middle- and after-ware decorators.
-*`runMiddleware(...args)`* runs the function with middleware only, no afterware
+*`usePipeline()`* returns two functions with argument-functions composed from
+right to left.
+The first argument is the function to decorate which will be
+called last. The rest are the middle- and after-wares.
+
+*`runMiddleware(...args)`* runs the function with middleware only, no afterware.
+
 *`runAfterware(...args)`* run the function with both middle- and after-ware.
 ```js
 const fnToDecorate = (value) => value
